@@ -11,14 +11,8 @@ class Triangle
     #equilateral
     if @side_1 == @side_2 && @side_2 == @side_3
       return :equilateral
-    #isosceles
-    elsif
-
-
-    #scalene
-    else
-
     end
+    
   end
 
   class TriangleError < StandardError
