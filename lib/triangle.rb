@@ -12,7 +12,7 @@ class Triangle
     y = @side_2
     z = @side_3
 
-    if (x+=y<=z || x+=z<=y || y+=z<=x  )
+    if (x+y<=z || x+z<=y || y+z<=x)
       raise TriangleError
     end
     if (x==y && y==z)
