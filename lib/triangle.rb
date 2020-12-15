@@ -8,8 +8,11 @@ class Triangle
   end
 
   def kind
+    x = @side_1 
+    y = @side_2 
+    z = @side_3 
     #equilateral
-    if @side_1 == @side_2 && @side_2 == @side_3
+    if (x==y && y==z)
       return :equilateral
     elsif @side_1 == @side_2 && @side_2 != @side_3 || @side_2 == @side_3 && @side_3 != @side_1
       return :isosceles
