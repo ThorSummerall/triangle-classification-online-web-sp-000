@@ -12,7 +12,7 @@ class Triangle
     if @side_1 == @side_2 && @side_2 == @side_3
       return :equilateral
     end
-    
+
   end
 
   class TriangleError < StandardError
