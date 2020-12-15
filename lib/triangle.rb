@@ -14,6 +14,8 @@ class Triangle
 
     if (x+y<=z || x+z<=y || y+z<=x)
       raise  TriangleError
+
+    # I THINK this code down below spits out the error message correctly? I can't use it obviously because it fails the tests, but here you go. 
     #  begin
     #    raise TriangleError
     #  rescue TriangleError => error
