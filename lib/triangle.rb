@@ -13,9 +13,9 @@ class Triangle
     z = @side_3
 
     if (x+y<=z || x+z<=y || y+z<=x)
-      begin 
-        raise TriangleError 
-      rescue TriangleError => error   
+      begin
+        raise TriangleError
+      rescue TriangleError => error
         puts error.message
       end
     end
@@ -30,7 +30,7 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    def message 
+    def message
       puts "Fix the error, you FOOL."
     end
   end
