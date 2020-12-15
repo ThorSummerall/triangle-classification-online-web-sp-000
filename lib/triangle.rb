@@ -13,11 +13,12 @@ class Triangle
     z = @side_3
 
     if (x+y<=z || x+z<=y || y+z<=x)
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      raise  TriangeError
+    #  begin
+    #    raise TriangleError
+    #  rescue TriangleError => error
+    #    puts error.message
+    #  end
     end
     if (x==y && y==z)
       return :equilateral
