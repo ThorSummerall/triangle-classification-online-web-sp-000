@@ -8,9 +8,9 @@ class Triangle
   end
 
   def kind
-    x = @side_1 
-    y = @side_2 
-    z = @side_3 
+    x = @side_1
+    y = @side_2
+    z = @side_3
     #equilateral
     if (x==y && y==z)
       return :equilateral
