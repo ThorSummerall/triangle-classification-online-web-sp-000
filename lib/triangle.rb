@@ -14,7 +14,7 @@ class Triangle
     #equilateral
     if (x==y && y==z)
       return :equilateral
-    elsif @side_1 == @side_2 && @side_2 != @side_3 || @side_2 == @side_3 && @side_3 != @side_1
+    elsif (x==y || y==z || z==x)
       return :isosceles
     else @side_1 != @side_2 && @side_2 != @side_3
       return :scalene
