@@ -13,7 +13,7 @@ class Triangle
     z = @side_3
 
     if (x+y<=z || x+z<=y || y+z<=x)
-      raise  TriangeError
+      raise  TriangleError
     #  begin
     #    raise TriangleError
     #  rescue TriangleError => error
