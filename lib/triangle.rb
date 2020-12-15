@@ -11,8 +11,10 @@ class Triangle
     #equilateral
     if @side_1 == @side_2 && @side_2 == @side_3
       return :equilateral
-    else @side_1 == @side2 && @side_2 != @side_3
+    elsif @side_1 == @side_2 && @side_2 != @side_3
       return :isosceles
+    else @side_1 != @side_2 && @side_2 !- @side_3
+      
     end
 
   end
