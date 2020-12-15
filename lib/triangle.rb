@@ -11,7 +11,10 @@ class Triangle
     x = @side_1
     y = @side_2
     z = @side_3
-    #equilateral
+
+    if (x+=y<=z || x+=z<=y || y+=z<=x  )
+      raise TriangleError
+    end
     if (x==y && y==z)
       return :equilateral
     elsif (x==y || y==z || z==x)
